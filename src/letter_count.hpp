@@ -8,3 +8,7 @@ constexpr int N_CHARS = ('Z' - 'A' + 1);
 inline int char_to_index(char ch) {
     return toupper(static_cast<unsigned char>(ch)) - 'A';
 }
+
+inline char index_to_char(int i) {
+    return 'A' + i;
+}

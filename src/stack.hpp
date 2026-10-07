@@ -37,3 +37,10 @@ inline void push_all(Stack& stk, std::string line) {
         stk.push(line[i]);
     }
 }
+
+inline void pop_all(Stack& stk) {
+    while (!stk.isEmpty()) {
+        std::cout << stk.pop();
+    }
+    std::cout << std::endl;
+}

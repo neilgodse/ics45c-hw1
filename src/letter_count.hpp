@@ -12,3 +12,12 @@ inline int char_to_index(char ch) {
 inline char index_to_char(int i) {
     return 'A' + i;
 }
+
+inline void count(std::string s, int counts[]) {
+    for (int i = 0; i < s.length(); i++) {
+        unsigned char c = static_cast<unsigned char>(s[i]);
+        if (isalpha(c)) {
+            counts[char_to_index(c)]++;
+        }
+    }
+}

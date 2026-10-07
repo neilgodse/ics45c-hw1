@@ -1,0 +1,10 @@
+#pragma once
+#include <iostream>
+#include <string>
+#include <cctype>
+
+constexpr int N_CHARS = ('Z' - 'A' + 1);
+
+inline int char_to_index(char ch) {
+    return toupper(static_cast<unsigned char>(ch)) - 'A';
+}

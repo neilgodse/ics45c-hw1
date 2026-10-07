@@ -21,3 +21,9 @@ inline void count(std::string s, int counts[]) {
         }
     }
 }
+
+inline void print_counts(int counts[], int len = N_CHARS) {
+    for (int i = 0; i < len; i++) {
+        std::cout << index_to_char(i) << " " << counts[i] << std::endl;
+    }
+}

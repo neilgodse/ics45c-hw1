@@ -31,3 +31,9 @@ public:
         return buf[_top--];
     }
 };
+
+inline void push_all(Stack& stk, std::string line) {
+    for (int i = 0; i < line.length(); i++) {
+        stk.push(line[i]);
+    }
+}

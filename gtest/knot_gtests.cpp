@@ -22,3 +22,7 @@ TEST(ConvertKnots, Two) {
 
 
 } // anonymous namespace
+
+TEST(ConvertKnots, MillionNoOverflow) {
+    EXPECT_NEAR(19179.29, knots_to_miles_per_minute(1000000), 0.01);
+}
